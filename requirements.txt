@@ -38,5 +38,8 @@ termcolor==1.1.0
 urllib3==1.25.7
 Werkzeug==0.16.0
 wincertstore==0.2
+git lfs install
+git lfs fetch
+git lfs pull
 wrapt==1.11.2
 WTForms==2.2.1
