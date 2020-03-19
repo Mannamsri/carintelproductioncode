@@ -56,13 +56,7 @@ def index():
             classes = np.array(['DAMAGED', 'WHOLE'])
             class_ind = car_model.predict_classes(input_image2)
             imageresults = classes[class_ind][0][0]
-            if 'damage' in filename.lower():
-                imageresults = 'DAMAGED'
-            else:
-                imageresults = 'WHOLE'
-        return redirect(url_for('prediction'))
-    return render_template("home.html")
-
+           
 @app.route('/prediction')
 def prediction():
     print(imageresults)
